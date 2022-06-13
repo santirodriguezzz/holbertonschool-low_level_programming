@@ -2,7 +2,7 @@
 /**
  * print_triangle - dibuja un triangulo
  *
- * @size: tamanio triangulo 
+ * @size: tamanio triangulo
  */
 void print_triangle(int size)
 {
