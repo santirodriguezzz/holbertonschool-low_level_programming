@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * main - test fizz buzz 
+ * main - test fizz buzz
  *
  * Return: 0;
  */
