@@ -1,13 +1,14 @@
 #include "main.h"
 /**
  * print_rev - funcion que imprima una cadena al reves seguido de nueva linea
- * @count
+ * @s: variable string
  */
 void print_rev(char *s)
 {
+
 	int count = 0, x;
 
-	while(s[count] != '\0')
+	while (s[count] != '\0')
 	{
 		count++;
 	}
