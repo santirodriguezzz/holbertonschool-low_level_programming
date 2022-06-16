@@ -25,12 +25,13 @@ void puts_half(char *str)
 {
 	int n, l;
 
-	l = _strlen(str);
+	l = _strlen(str) + 2;
 
-	for ( n = l / 2; str[n] != '\0'; n++)
+	for (n = l / 2; str[n] != '\0'; n++)
+
 	{
 		_putchar (str[n]);
-	} 
+	}
 		_putchar ('\n');
 
 }
