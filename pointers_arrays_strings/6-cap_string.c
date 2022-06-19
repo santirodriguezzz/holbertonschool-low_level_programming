@@ -8,7 +8,7 @@ char *cap_string(char *i)
 {
 	int x;
 
-	for (x = 0; i[x]; i++)
+	for (x = 0; i[x]; x++)
 	{
 		if (x == 0 && i[x] != '\0' && i[x] >= 97 && i[x] <= 122)
 		{
