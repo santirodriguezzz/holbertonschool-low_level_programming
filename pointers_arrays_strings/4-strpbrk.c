@@ -1,7 +1,7 @@
 #include "main.h"
 /**
 * _strpbrk - funcion que encuentra s en string
-* @s: string 
+* @s: string
 * @accept: string a comprobar
 * Return: coincidencia
 */
