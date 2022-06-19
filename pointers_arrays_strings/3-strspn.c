@@ -1,21 +1,24 @@
 #include "main.h"
 /**
- * _strcmp - compares
- * @s1: string 1
- * @s2: string 2
- * Return: (0).
+ * _strspn - fiuncion que calcula el largo de una string
+ * @s: string.
+ * @accept: resultado
+ * Return: numero de bytes.
  */
-int _strcmp(char *s1, char *s2)
+unsigned int _strspn(char *s, char *accept)
 {
-	int i = 0;
+	int i, x;
+	unsigned int rbytes = 0; /* important to start it at 0 */
 
-	while (s1[i] || s2[i])
+	for (i = 0; i <= 5; i++)
 	{
-		if (s1[i] != s2[i])
+		for (x = 0; accept[x]; x++) /* did it with for 'cause of the x = 0 part. */
 		{
-			return (s1[i] - s2[i]);
+			if (s[i] == accept[x])
+			{
+				rbytes++;
+			}
 		}
-	i++;
 	}
-	return (0);
+	return (rbytes);
 }
