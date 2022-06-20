@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _puts - debe escribir la cadena a la que apunta s , seguida de una \n
+ * _puts_recursion -debe escribir la cadena a la que apunta s,seguida de una \n
  *@s: string
  */
 void _puts_recursion(char *s)
