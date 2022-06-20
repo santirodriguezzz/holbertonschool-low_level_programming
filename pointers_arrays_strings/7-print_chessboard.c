@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
 * print_chessboard - imprime tablero ajedres
-* @a: valores para imprimir 
+* @a: valores para imprimir
 */
 void print_chessboard(char (*a)[8])
 {
