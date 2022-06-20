@@ -3,8 +3,8 @@
 /**
 * _strstr - encuentra la condicion
 * @needle: substring a encontrar
-* @haystack: string para comprobar 
-* Return: puntero 
+* @haystack: string para comprobar
+* Return: puntero
 */
 char *_strstr(char *haystack, char *needle)
 {
