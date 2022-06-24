@@ -9,7 +9,7 @@
 */
 char *str_concat(char *s1, char *s2)
 {	char *array;
-	int larg = 0, x, y;
+	int larg = 0, x = 0, y;
 
 	if (s1 != NULL && s2 == NULL)
 		larg = strlen(s1);
