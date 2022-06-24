@@ -8,12 +8,12 @@
 */
 void free_grid(int **grid, int height)
 {
-	int y;
+	int x;
 
 	grid = malloc(height * sizeof(int *));
-	for (y = 0; y < height; y++)
+	for (x = 0; x < height; x++)
 	{
-		free(grid[y]);
+		free(grid[x]);
 		free(grid);
 	}
 }
