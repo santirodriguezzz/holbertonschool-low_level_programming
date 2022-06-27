@@ -5,7 +5,7 @@
 * _calloc - funcion que asigna memoria para un array
 * @nmemb: numero de elementos
 * @size: cantidadde bytes
-* Return: puntero al array 
+* Return: puntero al array
 */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
