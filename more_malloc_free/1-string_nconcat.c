@@ -2,10 +2,11 @@
 #include <stdlib.h>
 #include <string.h>
 /**
-*@s1: string 1
-*@s2: string 2
-*@n: num de bytes para copiar a s2
-*Return: puntero a nueva array de s1 + n bytes de s2
+*string_nconcat - funcion  que concatena 2 string
+* @s1: string 1 a concatenar
+* @s2: string 2 a concatenar
+* @n: num de bytes para copiar a s2
+* Return: puntero a nueva array de s1 + n bytes de s2
 */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
@@ -34,7 +35,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	i = 0;
 	j = 0;
 	if (strlen(s1) > 0 || s1 != NULL)
-		for(; s1[i]; i++)
+		for (; s1[i]; i++)
 			array[i] = s1[i];
 	if (strlen(s2) > 0 || s2 != NULL)
 	{
