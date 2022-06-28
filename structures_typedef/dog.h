@@ -3,7 +3,7 @@
 /**
 * struct dog - poppy
 * @name : nombre perro
-* @owner : dueño 
+* @owner : dueño
 * @age : edad
 */
 struct dog
