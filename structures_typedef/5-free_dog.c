@@ -2,8 +2,8 @@
 #include <stdlib.h>
 #include "dog.h"
 /**
-* free_dog
-* @d:
+* free_dog- free dog
+* @d: puntero
 */
 void free_dog(dog_t *d)
 {
