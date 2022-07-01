@@ -3,14 +3,15 @@
 #include "3-calc.h"
 #include <stdlib.h>
 #include <string.h>
-/**i
+
+/**
  * main - funcion
- * @argc: int 
+ * @argc: int
  * @argv: int
  * Return: 0
  */
 
-int main (int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int (*x)(int, int);
 	int a, b;
