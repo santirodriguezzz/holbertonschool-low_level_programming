@@ -2,7 +2,7 @@
 /**
 * pop_listint - function
 *@head: first node
-*
+*Return: data
 */
 
 int pop_listint(listint_t **head)
