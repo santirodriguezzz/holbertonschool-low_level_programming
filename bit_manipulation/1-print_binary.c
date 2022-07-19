@@ -1,8 +1,7 @@
 #include "main.h"
 /**
-*print_binary - 
-*
-*
+*print_binary - function
+*@n: array
 */
 void print_binary(unsigned long int n)
 {
