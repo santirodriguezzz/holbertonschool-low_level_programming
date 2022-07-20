@@ -1,9 +1,9 @@
 #include "main.h"
 /**
-*
-*
-*
-*
+*flip_bits - function that filp bites
+*@n: value
+*@m: value
+*Return: num
 */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
