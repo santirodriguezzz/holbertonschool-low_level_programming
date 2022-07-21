@@ -24,12 +24,11 @@ void cpt(const char *ctrlC, const char *ctrlV)
 {
 	int fileC, fileV = 1024, readM, writeM;
 	char count[1024];
-	mode_t mode = S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH;
 
 	fileC =  open(ctrlC, O_RDONLY);
 	if (fileC == -1)
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", ctrlC), exit(98);
-	fileV = open(ctrlV, O_CREAT | O_TRUNC | O_WRONLY, mode);
+	fileV = open(ctrlV, O_CREAT | O_TRUNC | O_WRONLY, 0664);
 	if (fileV == -1)
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", ctrlV), exit(99);
 	while (fileV == 1024)
