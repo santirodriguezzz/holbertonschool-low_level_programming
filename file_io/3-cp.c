@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
 */
 void cpt(const char *ctrlC, const char *ctrlV)
 {
-	int fileC, fileV = 1024, readM, writeM;
+	int fileC, fileV, readM = 1024, writeM;
 	char count[1024];
 
 	fileC =  open(ctrlC, O_RDONLY);
@@ -31,7 +31,7 @@ void cpt(const char *ctrlC, const char *ctrlV)
 	fileV = open(ctrlV, O_CREAT | O_TRUNC | O_WRONLY, 0664);
 	if (fileV == -1)
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", ctrlV), exit(99);
-	while (fileV == 1024)
+	while (readM == 1024)
 	{
 		readM = read(fileC, count, 1024);
 		if (readM < 0)
