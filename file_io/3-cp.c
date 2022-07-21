@@ -9,7 +9,7 @@ int main(int argc, char *argv[])
 {
 	if (argc != 3)
 	{
-		dprintf(STDERR_FILENO, "%s\n", "Usage: cp file_from file_to ");
+		dprintf(STDERR_FILENO, "%s\n", "Usage: cp file_from file_to");
 		exit(97);
 	}
 	cpt(argv[1], argv[2]);
@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 void cpt(const char *ctrlC, const char *ctrlV)
 {
 	int fileC, fileV = 1024, readM, writeM;
-	char *count[1024];
+	char count[1024];
 	mode_t mode = S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH;
 
 	fileC =  open(ctrlC, O_RDONLY);
