@@ -22,14 +22,13 @@ int main(int argc, char *argv[])
 */
 void cpt(const char *ctrlC, const char *ctrlV)
 {
-	int fileC, fileV, readM, writeM;
+	int fileC, fileV = 1024, readM, writeM;
 	char *count[1024];
 	mode_t mode = S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH;
 
 	fileC =  open(ctrlC, O_RDONLY);
 	if (fileC == -1)
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", ctrlC), exit(98);
-
 	fileV = open(ctrlV, O_CREAT | O_TRUNC | O_WRONLY, mode);
 	if (fileV == -1)
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", ctrlV), exit(99);
