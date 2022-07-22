@@ -3,8 +3,8 @@
 /**
 *add_dnodeint - function that adds a new node at the beginning
 *@head: pointer of pointer that first node
-*@n: variable
-*Return: new node
+*@n: value
+*
 */
 
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
@@ -17,6 +17,7 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 		return (NULL);
 
 	newNode->n = num;
+	newNode->prev = NULL;
 	newNode->next = *head;
 	*head = newNode;
 	return (newNode);
