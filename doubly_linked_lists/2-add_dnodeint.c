@@ -2,7 +2,7 @@
 
 /**
 *add_dnodeint - function that adds a new node at the beginning
-*@head: pointer of pointer that first node
+*@head: pointer of pointer to first node
 *@n: value
 *Return: New Node
 */
@@ -16,8 +16,13 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 	if (newNode == NULL)
 		return (NULL);
 	newNode->n = num;
-	newNode->prev = NULL;
-	newNode->next = *head;
-	*head = newNode;
+	if (*head)
+	{
+		(*head)->prev = newNode;
+		newNode->next = *head;
+	}
+	else
+			newNode->next = NULL;
+		*head = newNode;
 	return (newNode);
 }
