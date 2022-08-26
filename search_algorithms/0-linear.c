@@ -5,7 +5,7 @@
  * @array: first element in array
  * @size: number of elements in array
  * @value: is the value to search for
- * Retrun: first index where value is located
+ * Return: first index where value is located
  */
 
 int linear_search(int *array, size_t size, int value)
