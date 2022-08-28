@@ -27,14 +27,14 @@ int binary_search(int *array, size_t size, int value)
 			if (size % 2 == 1)
 				i = temp + 1;
 			else
-				i = temp; 
+				i = temp;
 		}
 		else
 		{
 			if (size % 2 == 1)
 				size = temp;
 			else
-				size = temp -1;
+				size = temp - 1;
 		}
 	}
 	return (-1);
